@@ -1,0 +1,24 @@
+{
+  "name": "rabbitmq-dlx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "receiver": "node ./src/receive-log",
+    "emitter": "node ./src/emit-log",
+    "dead-letter": "node ./src/dead-letter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cibergarri/rabbitMQ-DLX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cibergarri/rabbitMQ-DLX/issues"
+  },
+  "homepage": "https://github.com/cibergarri/rabbitMQ-DLX#readme",
+  "dependencies": {
+    "amqplib": "0.5.5"
+  }
+}
