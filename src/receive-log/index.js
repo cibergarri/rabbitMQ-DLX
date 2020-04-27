@@ -42,11 +42,7 @@ const init = async () => {
   await assertExchange(channel, 'topic');
   const queueName = `logs-${args.join('-')}`;
   const deadLetterExchange = `topic-dlx`;
-  await assertExchange(channel, 'direct', 'topic-dlx');
 
-
-
-  // const deadLetterqueueObj = await assertQueue(channel, deadLetterExchange );
   const queueOptions = {
     // exclusive: true, //  if true, scopes the queue to the connection (defaults to false)
     // durable: true // persistence in combination with excusive and autoDelete
